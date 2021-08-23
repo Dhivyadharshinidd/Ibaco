@@ -1,0 +1,128 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+        
+        body {
+            /* background: wheat; */
+            /* background-color: pink; */
+            background-color:blanchedalmond;
+            /* background-color: pink; */
+            font-size: 16px;
+            font-family: 'Raleway', sans-serif;
+        }
+
+     
+
+        .container {
+            padding: 1em 0;
+            float: left;
+            width: 50%;
+        }
+
+        @media screen and (max-width: 640px) {
+            .container {
+                display: block;
+                width: 100%;
+            }
+        }
+
+        @media screen and (min-width: 900px) {
+            .container {
+                width: 33.33333%;
+            }
+        }
+
+    
+
+        .content {
+            position: relative;
+            width: 90%;
+            max-width: 400px;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .content .content-overlay {
+            background: rgba(0, 0, 0, 0.7);
+            /* background: rgba(136, 134, 134, 0.7); */
+            position: absolute;
+            height: 99%;
+            width: 100%;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            opacity: 0;
+            
+        }
+
+        .content:hover .content-overlay {
+            opacity: 1;
+        }
+
+        .content-image {
+            width: 100%;
+        }
+
+        .content-details {
+            position: absolute;
+            text-align: center;
+            padding-left: 1em;
+            padding-right: 1em;
+            width: 100%;
+            top: 50%;
+            left: 50%;
+            opacity: 0;
+            transform: translate(-50%, -50%);
+            transition: all 0.3s ease-in-out 0s;
+        }
+
+        .content:hover .content-details {
+            top: 50%;
+            left: 50%;
+            opacity: 1;
+        }
+
+        .fadeIn-bottom {
+            top: 80%;
+        }
+        h6{
+            color: #f9f9f9;
+        }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;} 
+  
+
+  .dropdown:hover .dropdown-content {display: block;}
+  
+
+  .navbar :hover .nav-item{
+    box-shadow: 0 4px 4px -4px rgba(0,0,0,.2);
+  }
+  .navbar :hover .dropdown{
+    box-shadow: 0 5px 5px -5px rgba(0,0,0,.2);
+  }
+  h4,h5{
+      color: darkgray;
+  }
